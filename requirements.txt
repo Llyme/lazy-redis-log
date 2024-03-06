@@ -1,0 +1,6 @@
+async-timeout==4.0.3 ; python_version >= "3.8" and python_version < "4.0" \
+    --hash=sha256:4640d96be84d82d02ed59ea2b7105a0f7b33abe8703703cd0ab0bf87c427522f \
+    --hash=sha256:7405140ff1230c310e51dc27b3145b9092d659ce68ff733fb0cefe3ee42be028
+redis==5.0.2 ; python_version >= "3.8" and python_version < "4.0" \
+    --hash=sha256:3f82cc80d350e93042c8e6e7a5d0596e4dd68715babffba79492733e1f367037 \
+    --hash=sha256:4caa8e1fcb6f3c0ef28dba99535101d80934b7d4cd541bbb47f4a3826ee472d1
