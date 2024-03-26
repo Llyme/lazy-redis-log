@@ -1,3 +1,4 @@
+from typing import Optional
 from redis import Redis
 
 
@@ -19,6 +20,10 @@ class LazyRedisLog:
         self.do_redis: bool = True
         """
         If the logger should write to Redis by default.
+        """
+        self.ttl: Optional[int] = None
+        """
+        If not `None`, applies TTL to the Redis key.
         """
 
     def __call__(
@@ -56,6 +61,12 @@ class LazyRedisLog:
                     field: text,
                 },
             )
+
+            if self.ttl != None:
+                self.redis.expire(
+                    self.key,
+                    self.ttl,
+                )
 
         if console:
             print(

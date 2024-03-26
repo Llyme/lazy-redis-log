@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lazy-redis-log"
-version = "0.1.2"
+version = "0.1.3"
 description = "Like print, but also writes to Redis Streams!"
 authors = ["MisterNyan <michael.edmund.wong@gmail.com>"]
 readme = "README.md"
